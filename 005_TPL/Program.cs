@@ -20,10 +20,11 @@
             }
 
             Console.WriteLine("Method Main Waited");
-            foreach (Task item in tasks)
-            {
-                item.Wait();
-            }
+            //foreach (Task item in tasks)
+            //{
+            //    item.Wait();
+            //}
+            Task.WaitAll(tasks);
 
             Console.WriteLine("Method Main continued your work");
 
